@@ -47,12 +47,22 @@ export default mutationWithClientMutationId({
       classe,
     } = args;
 
-    // TODO: mutation logic
+    const post = new Post({
+      title,
+      type,
+      text,
+      file,
+      classe,
+    });
+    await post.save();
+
+    console.log('post: ', post._id);
 
     return {
-      // id: id, // ID of the newly created row
-      error: null,
+      id: post._id,
+      error: post,
     };
+
   },
   outputFields: {
     postEdge: {

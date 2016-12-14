@@ -1,5 +1,8 @@
 # Represents Campaign
 type Campaign {
+  # The ID of an object
+  id: ID!
+  _id: String
   title: String
   slug: String
   slogan: String
@@ -122,6 +125,9 @@ type PageInfo {
 
 # Represents Post
 type Post {
+  # The ID of an object
+  id: ID!
+  _id: String
   title: String
   type: String
   text: String

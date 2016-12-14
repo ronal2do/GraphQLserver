@@ -48,7 +48,11 @@ export default class Post {
   }
 
   static async load(viewer, id) {
-    const data = await Post.PostLoader.load(id);
+    if (!id) return null
+
+    const data = await Post.PostLoader.load(
+       id
+    );
 
     return Post.viewerCanSee(viewer, data) ? new Post(data) : null;
   }

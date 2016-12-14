@@ -4,11 +4,19 @@ import {
   GraphQLObjectType,
   GraphQLString,
 } from 'graphql';
+import {
+  globalIdField,
+} from 'graphql-relay';
 
 export default new GraphQLObjectType({
   name: 'Post',
   description: 'Represents Post',
   fields: () => ({
+    id: globalIdField('Post'),
+    _id: {
+      type: GraphQLString,
+      resolve: obj => obj._id,
+    },
     title: {
       type: GraphQLString,
       resolve: obj => obj.title,

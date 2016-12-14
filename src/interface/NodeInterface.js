@@ -28,10 +28,10 @@ const {
       return await UserLoader.load(user, id);
     }
     if (type === 'Post') {
-      return await PostLoader.load(post, id);
+      return await PostLoader.load(user, id);
     }
     if (type === 'Campaign') {
-      return await CampaignLoader.load(campaign, id);
+      return await CampaignLoader.load(user, id);
     }
     if (type === 'Viewer') {
       return await ViewerLoader.load(id);
