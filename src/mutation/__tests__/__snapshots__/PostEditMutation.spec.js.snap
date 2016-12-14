@@ -1,0 +1,25 @@
+exports[`test should edit a record on database 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Argument "input" has invalid value {id: "UG9zdDo1ODUxNDFiYjYwNDk1YTE0OGI2ZTA1YmE=", example: "Example Field to Update"}.
+In field "example": Unknown field.
+In field "title": Expected "String!", found null.
+In field "type": Expected "String!", found null.
+In field "text": Expected "String!", found null.],
+    [GraphQLError: Cannot query field "node" on type "Post".],
+  ],
+}
+`;
+
+exports[`test should not allow anonymous user 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Argument "input" has invalid value {id: "UG9zdDo1ODUxNDFiYTYwNDk1YTE0OGI2ZTA1Yjg=", example: "Example Field to Update"}.
+In field "example": Unknown field.
+In field "title": Expected "String!", found null.
+In field "type": Expected "String!", found null.
+In field "text": Expected "String!", found null.],
+    [GraphQLError: Cannot query field "node" on type "Post".],
+  ],
+}
+`;

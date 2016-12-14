@@ -3,8 +3,8 @@ import { toGlobalId } from 'graphql-relay';
 import { schema } from '../../schema';
 import { setupTest } from '../../../test/helper';
 
-import User from '../model/User';
-import Campaign from '../model/Campaign';
+import User from '../../model/User';
+import Campaign from '../../model/Campaign';
 
 beforeEach(async () => await setupTest());
 

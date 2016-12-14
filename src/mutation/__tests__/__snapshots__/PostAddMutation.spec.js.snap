@@ -1,0 +1,23 @@
+exports[`test should create a record on database 1`] = `
+Object {
+  "data": Object {
+    "PostAdd": Object {
+      "postEdge": null,
+    },
+  },
+  "errors": Array [
+    [GraphQLError: The loader.load() function must be called with a value,but got: undefined.],
+  ],
+}
+`;
+
+exports[`test should not allow anonymous user 1`] = `
+Object {
+  "data": Object {
+    "PostAdd": null,
+  },
+  "errors": Array [
+    [GraphQLError: Unauthorized user],
+  ],
+}
+`;

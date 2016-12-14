@@ -1,10 +1,10 @@
 import { graphql } from 'graphql';
 import { schema } from '../../schema';
-import { setupTest } from '../../../../test/helper';
+import { setupTest } from '../../../test/helper';
 import {
   User,
   Campaign,
-} from '../../../models';
+} from '../../model';
 
 beforeEach(async () => await setupTest());
 

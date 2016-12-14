@@ -1,0 +1,27 @@
+exports[`test should edit a record on database 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Argument "input" has invalid value {id: "Q2FtcGFpZ246NTg1MTQxYmI3MmM4ZjMxNDhiYzUxNGM1", example: "Example Field to Update"}.
+In field "example": Unknown field.
+In field "title": Expected "String!", found null.
+In field "slug": Expected "String!", found null.
+In field "slogan": Expected "String!", found null.
+In field "bg": Expected "String!", found null.],
+    [GraphQLError: Cannot query field "node" on type "Campaign".],
+  ],
+}
+`;
+
+exports[`test should not allow anonymous user 1`] = `
+Object {
+  "errors": Array [
+    [GraphQLError: Argument "input" has invalid value {id: "Q2FtcGFpZ246NTg1MTQxYmI3MmM4ZjMxNDhiYzUxNGMz", example: "Example Field to Update"}.
+In field "example": Unknown field.
+In field "title": Expected "String!", found null.
+In field "slug": Expected "String!", found null.
+In field "slogan": Expected "String!", found null.
+In field "bg": Expected "String!", found null.],
+    [GraphQLError: Cannot query field "node" on type "Campaign".],
+  ],
+}
+`;
